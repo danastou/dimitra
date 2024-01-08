@@ -30,7 +30,7 @@ def findPolygons(polygons_data):
     polygons = []
     # peta double quotes
     polygons_data = polygons_data.replace('"', '')
-    # katharizoume 'MULTIPOLYGON ((' kai '))' apo arxh kai telos, spame to string me delimeters ta ')), ((' gia na skasei lista apo polygons
+    # katharizoume 'MULTIPOLYGON ((' kai '))' apo arxh kai telos, spame to string me delimeters ta ')), ((' gia na emfanisei ti lista me ta polygons
     polygons_data = polygons_data.replace('MULTIPOLYGON (((', '').rstrip('))').split(')), ((')
     for polygon_data in polygons_data:
         # delimeter to komma gia na paroume list of points
