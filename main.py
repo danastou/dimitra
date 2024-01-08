@@ -1,7 +1,7 @@
 import csv, calendar, ast, glob, os, platform
 import shapely.geometry as sg
 from shapely.geometry import Polygon, MultiPolygon
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plτ
 
 from Perifereia import Perifereia
 from Seismos import Seismos
@@ -15,10 +15,7 @@ DESIRED_INDICES = [4, 12]
 OUTPUT_PATH = "output/"
 csv.field_size_limit(2**31-1)
 
-# ena karo constants, enas theos kserei an xreiazontan kai ola
 
-
-# lambda func gia na kanoume to asxhmo timestamp wraio mhna
 
 def get_month(timestamp):
     return calendar.month_name[int(timestamp[:2])]
